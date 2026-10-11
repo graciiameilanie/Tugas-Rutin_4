@@ -1,0 +1,18 @@
+// =====================================================
+// THEMES — mode gelap
+// =====================================================
+@use "../abstracts/variables" as v;
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: v.$color-dark-bg;
+    color: v.$color-dark-text;
+  }
+
+  .card,
+  .form,
+  .header {
+    background-color: v.$color-dark-surface;
+    border-color: v.$color-dark-border;
+  }
+}

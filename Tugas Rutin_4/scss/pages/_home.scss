@@ -1,0 +1,8 @@
+// =====================================================
+// PAGES — style yang cuma berlaku di halaman tertentu
+// =====================================================
+@use "../abstracts/variables" as v;
+
+#profil .card__text {
+    max-width: 60ch;
+}

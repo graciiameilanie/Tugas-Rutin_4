@@ -1,0 +1,29 @@
+// =====================================================
+// MIXINS — 3 cetakan CSS yang dipakai berulang
+// =====================================================
+@use "sass:map";
+@use "variables" as v;
+
+// 1) Bikin elemen jadi flexbox
+@mixin flex($justify: flex-start, $align: center, $gap: 0) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+// 2) Style dasar kartu (dipakai di banyak komponen)
+@mixin card {
+    background-color: v.$color-surface;
+    border: 1px solid v.$color-border;
+    border-radius: v.$radius;
+    box-shadow: v.$shadow;
+    padding: map.get(v.$spacers, 2);
+}
+
+// 3) Media query buat layar kecil (mobile)
+@mixin mobile {
+    @media (max-width: 700px) {
+        @content;
+    }
+}

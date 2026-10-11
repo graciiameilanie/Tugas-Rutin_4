@@ -1,0 +1,11 @@
+// =====================================================
+// MAIN.SCSS — cuma isi @use ke semua partial
+// =====================================================
+@use "abstracts/variables";
+@use "abstracts/mixins";
+@use "vendors/vendors";
+@use "base/base";
+@use "layout/layout";
+@use "components/components";
+@use "pages/home";
+@use "themes/dark";

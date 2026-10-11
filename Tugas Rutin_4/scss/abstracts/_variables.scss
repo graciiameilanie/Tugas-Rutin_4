@@ -1,0 +1,33 @@
+// =====================================================
+// VARIABLES — semua warna & jarak disimpan di sini
+// =====================================================
+@use "sass:map";
+
+// Warna (disamakan persis sama TR2 — lavender)
+$color-bg: #f7f5fb;
+$color-surface: #ffffff;
+$color-text: #2e2a38;
+$color-text-muted: #7a7189;
+$color-accent: #9b8bc4;
+$color-accent-dark: #7a67a8;
+$color-accent-soft: #ece7f7;
+$color-border: #e3ddf0;
+
+// Warna dark mode (disamakan persis sama TR2)
+$color-dark-bg: #1a1722;
+$color-dark-surface: #242030;
+$color-dark-text: #f0edf7;
+$color-dark-text-muted: #a89fc0;
+$color-dark-accent: #c4b5e8;
+$color-dark-border: #372f47;
+
+// Jarak (spacing) — dipakai juga di loop @each nanti
+$spacers: (
+    1: 0.5rem,
+    2: 1rem,
+    3: 1.5rem,
+    4: 2.5rem,
+);
+
+$radius: 14px;
+$shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
